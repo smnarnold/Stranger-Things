@@ -12,9 +12,7 @@ html {
 
     &-img { display: flex; vertical-align: middle; justify-content: center; }
 
-    &-content {
-        padding: 0.2rem 1.2rem 1.2rem 1.2rem;
-    }
+    &-content { padding: 0.2rem 1.2rem 1.2rem 1.2rem; }
 
     .grad-dustin {background-image: linear-gradient(to bottom, #e8f5ff, #45b2ff);}
     .grad-lucas {background-image: linear-gradient(to bottom, #ffa76a, #ff4431);}
