@@ -3,8 +3,6 @@ html {
 }
 
 .card {
-    background-color: #f5f5dc;
-    width: 300px;
     margin: 20px;
 
 }
@@ -14,14 +12,18 @@ html {
 }
 
 .card .card-img{
-    display: flex;
-    vertical-align: middle;
-    justify-content: center;
+    margin: 0 auto;
+    height:300px;
+    width:300px;
+    border-radius:50%;
 
 }
 
 .card .card-content{
     padding:0.2rem 1.2rem 1.2rem 1.2rem;
+    background-color: #f5f5dc;
+    height: 175px;
+    border-radius: 8px;
 }
 
 .card .gradient-lucas {
@@ -48,4 +50,16 @@ h2 {
     font-family: sans-serif;
     font-size: 24px;
 
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+
+}
+
+@media screen and (max-width: 505px){
+    .container{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) ;
+    }
 }
