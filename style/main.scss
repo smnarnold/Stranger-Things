@@ -1,22 +1,48 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    background-color: black;
+  background-color: black;
 }
 
-.card {
-    background-color: #f5f5dc;
-    width: 300px; margin: 20px;
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  .card {
+    margin: 20px;
 
-    &-img { display: flex; vertical-align: middle; justify-content: center; }
+    &-img {
+      margin: 0 auto;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+    }
 
-    &-content { padding: 0.2rem 1.2rem 1.2rem 1.2rem; }
+    &-content {
+      background-color: #f5f5dc;
+      border-radius: 8px;
+      height: 250px;
+      padding: 0.2rem 1.2rem 1.2rem 1.2rem;
+    }
 
-    .grad-dustin {background-image: linear-gradient(to bottom, #e8f5ff, #45b2ff);}
-    .grad-lucas {background-image: linear-gradient(to bottom, #ffa76a, #ff4431);}
-    .grad-onze {background-image: linear-gradient(to bottom, #9a8478, #1e130c);}
-    .grad-mike {background-image: linear-gradient(to bottom, #072239, #07d173);}
+    .grad-dustin {
+      background-image: linear-gradient(to bottom, #e8f5ff, #45b2ff);
+    }
+    .grad-lucas {
+      background-image: linear-gradient(to bottom, #ffa76a, #ff4431);
+    }
+    .grad-onze {
+      background-image: linear-gradient(to bottom, #9a8478, #1e130c);
+    }
+    .grad-mike {
+      background-image: linear-gradient(to bottom, #072239, #07d173);
+    }
+  }
+}
 
+@media screen and (max-width: 500px) {
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 }
