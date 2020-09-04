@@ -13,13 +13,10 @@
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	height:auto;
+	width:100vw;
 	}
 	
-	img.Dustin {
-
-		}
-		
-		
 	img.Lucas {
 	background-image: linear-gradient(to top,  #ffa76a 0%, #ff4431 100%);
 		}
@@ -40,7 +37,17 @@
 		border-radius: 6px;
 		}
 	
-	div#imgContainer {
+	div#imgDustin {
+		background-image: linear-gradient(to top,  #e8f5ff 0%, #45b2ff 100%);
+		border-radius: 50%;
+		width: 100%;
+		height: auto;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	div#imgLucas {
 		background-image: linear-gradient(to top,  #e8f5ff 0%, #45b2ff 100%);
 		border-radius: 50%;
 		width: 100%;
@@ -64,16 +71,18 @@
   </style>
 </head>
 <body>
-	<div id="imgContainer">
+	<div id="imgDustin">
   		<img src="https://i.imgur.com/rvoU6Oo.png" alt="Dustin" class="Dustin">
 	</div>
    <div class="text">
 	   <h2>Dustin</h2>
 		   <p>Dustin est rempli d'énergie et exubérant à souhait. Sa façon de s'exprimer et ses plaisanteries constantes font de lui un personnage digne d'un roman de Stephen King.</p>
    </div>
-   
-   <img src="https://i.imgur.com/5zlzGkw.png" alt="Lucas" class="Lucas">
-    <div class="text">
+   <div id="imgLucas">
+  	 <img src="https://i.imgur.com/5zlzGkw.png" alt="Lucas" class="Lucas">
+	</div>
+
+<div class="text">
 	   <h2>Lucas</h2>
 		   <p>Lucas est initialement sceptique quant à l'arrivée d'Onze dans le groupe, mais finit par l'accepter. Geek, comme le reste de ses amis, il manie adroitement une fronde, ce qui se révèle utile contre le Demogorgon.</p>
    </div>
