@@ -5,7 +5,9 @@ html{
 .card{
     width: 300px;
     padding: 20px;
+    animation-duration:0.33s;
 }
+
 .Lucas{
  background-image: linear-gradient(to bottom, #ffa76a, #ff4431);
  border-radius: 50%;
@@ -30,6 +32,17 @@ html{
     padding: 0.2rem 1.2rem 1.2rem 1.2rem;
     background-color: #f5f5dc;
     border-radius: 6px;
+    transform: skewY(2deg);
+    animation-name: hover;
+    animation-duration:0.33s;
+}
+
+.card-content:hover{
+    background-color:#dddddd;
+}
+
+.card:hover{
+    transform: scale(1.05);
 }
 
 h2{
