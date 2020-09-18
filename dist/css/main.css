@@ -13,6 +13,11 @@ html {
 
 .container .card {
   margin: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.container .card:hover {
+  transform: scale(1.05);
 }
 
 .container .card-img {
@@ -27,6 +32,12 @@ html {
   border-radius: 8px;
   height: 250px;
   padding: 0.2rem 1.2rem 1.2rem 1.2rem;
+  transform: translateY(-2%) skewY(2deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.container .card-content:hover {
+  background-color: #dddddd;
 }
 
 .container .card .grad-dustin {
