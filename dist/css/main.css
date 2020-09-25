@@ -7,8 +7,9 @@ html {
 }
 
 .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .container .card {
@@ -30,7 +31,6 @@ html {
 .container .card-content {
   background-color: #f5f5dc;
   border-radius: 8px;
-  height: 250px;
   padding: 0.2rem 1.2rem 1.2rem 1.2rem;
   transform: translateY(-2%) skewY(2deg);
   transition: all 0.3s ease-in-out;
@@ -56,8 +56,13 @@ html {
   background-image: linear-gradient(to bottom, #072239, #07d173);
 }
 
-@media screen and (max-width: 500px) {
+@media (min-width: 600px) {
   .container {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+  }
+  .container .card {
+    flex: 0 1 45%;
   }
 }
