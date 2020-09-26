@@ -9,8 +9,10 @@ html {
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 20px;
     transition: all 0.3s ease-in-out;
 
@@ -19,7 +21,6 @@ html {
     }
 
     &-img {
-      margin: 0 auto;
       width: 300px;
       height: 300px;
       border-radius: 50%;
@@ -28,6 +29,7 @@ html {
     &-content {
       background-color: #f5f5dc;
       border-radius: 8px;
+      width: 300px;
       padding: 0.2rem 1.2rem 1.2rem 1.2rem;
       transform: translateY(-2%) skewY(2deg);
       transition: all 0.3s ease-in-out;
@@ -52,14 +54,10 @@ html {
   }
 }
 
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .container {
     flex-direction: row;
-    flex-flow: wrap;
+    flex-wrap: wrap;
     justify-content: center;
-
-    .card {
-      flex: 0 1 45%;
-    }
   }
 }
