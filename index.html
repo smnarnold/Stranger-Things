@@ -3,6 +3,11 @@
 <head>
   <style>
 
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .image1{
   background-image: linear-gradient(to top, #e8f5ff 0%, #45b2ff 100%);
   border-radius: 50%;
@@ -77,6 +82,7 @@
         -moz-box-sizing: border-box;
         transition: all .0.33s ease-in-out;
         display: flex;
+        flex-wrap: wrap;
     }
 
 
@@ -214,8 +220,21 @@
     .responsive {
       width: 100%;
       height: auto;
-      display: flex;
-      flex-wrap: wrap;
+    }
+
+    @media (min-width: 600px){
+      .image1 {flex-wrap: wrap;}
+      .image2 {flex-wrap: wrap;}
+      .image3 {flex-wrap: wrap;}
+      .image4 {flex-wrap: wrap;}
+      .div-dustin-boite {flex-wrap: wrap;}
+      .div-dustin-titre {flex-wrap: wrap;}
+      .div-lucas-boite {flex-wrap: wrap;}
+      .div-lucas-titre {flex-wrap: wrap;}
+      .div-onze-boite {flex-wrap: wrap;}
+      .div-onze-titre {flex-wrap: wrap;}
+      .div-mike-boite {flex-wrap: wrap;}
+      .div-mike-titre {flex-wrap: wrap;}
     }
 
 </style>
@@ -224,6 +243,7 @@
   <title>Stranger Things</title>
 </head>
 <body style="background-color:#000000;">
+
   <center><img src="https://i.imgur.com/rvoU6Oo.png" alt="Dustin" class="image1 responsive"></center>
   <div class="div-dustin-boite responsive"><div class="div-dustin-titre">Dustin</div>Dustin est rempli d'énergie et exubérant à souhait. Sa façon de s'exprimer et ses plaisanteries constantes font de lui un personnage digne d'un roman de Stephen King.</div><br><br>
   <center><img src="https://i.imgur.com/5zlzGkw.png" alt="Lucas" class="image2 responsive"></center>
@@ -232,5 +252,6 @@
   <div class="div-onze-boite responsive"><div class="div-onze-titre">Onze</div>Onze, de son vrai nom: Jane Ives, est la super-héroïne de Stranger Things. Elle est la seule à posséder des super pouvoirs. D'un simple saignement de nez, elle peut réaliser des choses impressionnantes avec son esprit et sauver ses camarades.</div><br><br>
   <center><img src="https://i.imgur.com/3eG4ete.png" alt="Mike" class="image4 responsive"></center>
   <div class="div-mike-boite responsive"><div class="div-mike-titre">Mike</div>La série est centrée sur Mike et sa famille. Il est celui qui accueil Onze et se soucie le plus d'elle. Bienveillant, il aime Star Wars, Dungeons et Dragons et compagnie.</div><br><br>
+
 </body>
 </html>
