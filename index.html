@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style> 
     body {
-        background-color: black
+        background-color: black;
+        display: flex;
     }
     
     img {
@@ -20,7 +21,9 @@
     }
 
     .carte {
+        flex-direction: column;
         transition-duration:0.333s;
+        flex-wrap: nowrap;
     }
 
     .Dustinimg { 
@@ -71,8 +74,9 @@
     }
     
     .text:hover {
-        background-color:#dddd
+        background-color:#dddd;
     }
+
     .text {
         transition-duration:0.333s;
     }
@@ -89,7 +93,20 @@
         font-family: sans-serif; 
         font-weight: normal;
     }
-  
+
+    @media(min-width: 600px){
+    .carte{
+        width: 50%;
+        flex-wrap: wrap;
+        }
+    }
+
+    /*@media(min-width: 900px){
+    .carte{
+        width: 100%;
+        flex-wrap: nowrap;
+        } 
+    }*/
     </style>
   
   <title>Stranger Things</title>
