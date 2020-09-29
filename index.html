@@ -13,18 +13,39 @@
        color:#000000;
        font-family: Arial, sans-serif;
        text-align: left;
-       margin:20px;}
+       margin:20px,0px,20px,0px;
+       width:100%;
+       height:auto;}
 
        div.card.dustin .img{ 
         background:linear-gradient( #45b2ff, #e8f5ff);
         border-radius:50%;
         width:100%;
-        height:auto;
+       height:auto;
+
+       
 
 
         
 
        }
+       .circle{
+        width:50%;
+        height:50%;
+        border-radius:50%;
+       vertical-align: middle;
+
+    }
+
+    .circle:after{
+        content:"";
+        padding-top:50%;
+        padding-left:50% ;
+        padding-right:50%;
+        padding-bottom:50%;
+        display:block;
+       
+    }
 
 
        div.card.lucas { 
@@ -40,7 +61,8 @@
         background: linear-gradient( #ff4431,#ffa76a);
         border-radius:50%;
         width:100%;
-        height:auto;
+       height:auto;
+        
        
 
        }
@@ -97,8 +119,7 @@
        padding-left:30px;
        padding-top:20px;
        margin:0px;
-       width: 100%;
-       height: auto;
+      
      
        
         }
@@ -108,8 +129,7 @@
        margin-bottom:40px;
        padding-right:30px;
        padding-left: 30px;
-       width:100%;
-       height:auto;
+      
           }
           .center{
             display:block;
@@ -124,6 +144,7 @@
 <body>
   <div class= "card dustin"> 
     <div class= "img">
+      <div class="circle"></div>
     <img src="https://i.imgur.com/rvoU6Oo.png" alt="Dustin" style="display:block;" class="center">
     </div>
     <div class= "texte">
@@ -135,6 +156,7 @@
 
   <div class= "card lucas">
     <div class= "img">
+      <div class="circle"></div>
     <img src="https://i.imgur.com/5zlzGkw.png" alt="Lucas" style="display:block;" class="center">
   </div>
     <div class= "texte">
@@ -146,23 +168,30 @@
 
        <div class= "card onze">
         <div class= "img">
+          <div class="circle"></div>
        <img src="https://i.imgur.com/vIMCZqA.png" alt="Onze" style="display:block;" class="center">
         </div>
        <div class= "texte">
          <h1>Onze</h1> 
-        <p>Onze, de son vrai nom: Jane Ives, est la super-héroïne de Stranger Things.
-         Elle est la seule à posséder des super pouvoirs. D'un simple saignement de nez,
-          elle peut réaliser des choses impressionnantes avec son esprit et sauver ses camarades.</p>
+        <p>Onze, de son vrai nom: Jane Ives, 
+          est la super-héroïne de Stranger Things.
+         Elle est la seule à posséder des super pouvoirs. 
+         D'un simple saignement de nez,
+          elle peut réaliser des choses impressionnantes avec son esprit 
+          et sauver ses camarades.</p>
           </div>
 
           <div class= "card mike">
             <div class= "img">
+              <div class="circle"></div>
           <img src="https://i.imgur.com/3eG4ete.png" alt="Mike" style="display:block;" class="center">
           </div>
           <div class= "texte">
         <h1>Mike</h1>
-          <p>La série est centrée sur Mike et sa famille. 
-            Il est celui qui accueil Onze et se soucie le plus d'elle. 
+          <p>La série est centrée sur Mike
+             et sa famille. 
+            Il est celui qui accueil 
+            Onze et se soucie le plus d'elle. 
             Bienveillant, il aime Star Wars, Dungeons et Dragons et compagnie.</p>
             </div>
             </body>
