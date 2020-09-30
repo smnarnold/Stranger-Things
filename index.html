@@ -7,6 +7,7 @@
     body {
         background-color: black;
         display: flex;
+        flex-direction: column;
     }
     
     img {
@@ -21,9 +22,8 @@
     }
 
     .carte {
-        flex-direction: column;
         transition-duration:0.333s;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
 
     .Dustinimg { 
@@ -97,16 +97,25 @@
     @media(min-width: 600px){
     .carte{
         width: 50%;
-        flex-wrap: wrap;
-        }
+      }
+
+    body{
+      flex-direction: row;
+      flex-wrap: wrap;
+      }
     }
 
-    /*@media(min-width: 900px){
+    @media(min-width: 900px){
     .carte{
         width: 100%;
+        }
+
+    body{
+        flex-direction: row;
         flex-wrap: nowrap;
-        } 
-    }*/
+      }
+    }
+
     </style>
   
   <title>Stranger Things</title>
