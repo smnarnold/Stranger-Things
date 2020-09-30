@@ -27,10 +27,13 @@
         transform: scale(1.05);
         transition-duration: 0.33s;
         background-color: #dddddd}
+
+    .tout {display:flex; flex-wrap:wrap;}
         
-
-    @media (min-width: 600px) {.tout {display: flex; flex-wrap:nowrap; flex-direction:row; align-items:flex-start; justify-content:flex-start; width:50% } }
-
+    @media (min-width: 600px) {.tout {width:50%} }
+    @media (min-width: 600px) {.premiere {display: flex; flex-wrap:nowrap } }
+    @media (min-width: 600px) {.deuxieme {display: flex; flex-wrap:nowrap } }
+    @media (min-width: 900px) {.tout {display: flex; flex-wrap:nowrap} }
 
     .CarteD:hover {
         transform: scale(1.05);
@@ -60,6 +63,8 @@
 
     <div class="tout">
 
+    <div class="premiere">
+
     <div class="CarteD">
     <div class="Dustin"> <img src="https://i.imgur.com/rvoU6Oo.png" alt="Dustin"> </div>
       <p> <span style="font-family:sans-serif;font-size:24px;font-weight:bold">Dustin </span> </br> </br>
@@ -70,6 +75,9 @@
       <p> <span style="font-family:sans-serif;font-size:24px;font-weight:bold">Lucas </span> </br> </br>
       <span style="font-family:sans-serif;font-size:16px;"> Lucas est initialement sceptique quant à l'arrivée d'Onze dans le groupe, mais finit par l'accepter. Geek, comme le reste de ses amis, il manie adroitement une fronde, ce qui se révèle utile contre le Demogorgon. </span> </p> </div> 
     
+    </div>
+    <div class="deuxieme">
+
     <div class="CarteO"> 
     <div class="Onze"> <img src="https://i.imgur.com/vIMCZqA.png" alt="Onze">   </div>
       <p> <span style="font-family:sans-serif;font-size:24px;font-weight:bold">Onze </span> </br> </br>
@@ -79,6 +87,7 @@
     <div class="Mike"> <img src="https://i.imgur.com/3eG4ete.png" alt="Mike">   </div>
       <p> <span style="font-family:sans-serif;font-size:24px;font-weight:bold">Mike </span> </br> </br>
       <span style="font-family:sans-serif;font-size:16px;"> La série est centrée sur Mike et sa famille. Il est celui qui accueil Onze et se soucie le plus d'elle. Bienveillant, il aime Star Wars, Dungeons et Dragons et compagnie. </span> </p> </div>
+</div>
 </div>
 </body>
 </html>
