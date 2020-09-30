@@ -1,14 +1,280 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+  <style>
+
+.image{
+  position: relative;
+}
+
+.degrade{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+img{
+  position: relative;
+  display: block;
+}
+
+.image1{
+  background-image: linear-gradient(to top, #e8f5ff 0%, #45b2ff 100%);
+  border-radius: 50%;
+  transition: all .0.33s ease-in-out;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image2{
+  background-image: linear-gradient(to top, #ffa76a 0%, #ff4431 100%);
+  border-radius: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image3{
+  background-image: linear-gradient(to top, #9a8478 0%, #1e130c 100%);
+  border-radius: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image4{
+  background-image: linear-gradient(to top, #072239 0%, #07d173 100%);
+  border-radius: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.div-dustin-boite {
+        height: auto;
+        margin: auto;
+        width: 300px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 30px;
+        background-color: #f5f5dc;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        border-radius: 6px;
+        transform: rotate(2deg);
+        transition: all .0.33s ease-in-out;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .div-dustin-boite:hover {
+        background-color: #dddddd;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .div-dustin-titre {
+        margin: auto;
+        padding-right: 30px;
+        padding-bottom: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        transition: all .0.33s ease-in-out;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .div-lucas-boite {
+        height: auto;
+        margin: auto;
+        width: 300px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 30px;
+        background-color: #f5f5dc;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        border-radius: 6px;
+        transform: rotate(2deg);
+        transition: all .0.33s ease-in-out;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .div-lucas-boite:hover {
+        background-color: #dddddd;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .div-lucas-titre {
+        margin: auto;
+        padding-right: 30px;
+        padding-bottom: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .div-onze-boite {
+        height: auto;
+        margin: auto;
+        width: 300px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 30px;
+        background-color: #f5f5dc;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        border-radius: 6px;
+        transform: rotate(2deg);
+        transition: all .0.33s ease-in-out;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .div-onze-boite:hover {
+        background-color: #dddddd;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .div-onze-titre {
+        margin: auto;
+        padding-right: 30px;
+        padding-bottom: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    
+    .div-mike-boite {
+        height: auto;
+        margin: auto;
+        width: 300px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 30px;
+        background-color: #f5f5dc;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        border-radius: 6px;
+        transform: rotate(2deg);
+        transition: all .0.33s ease-in-out;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .div-mike-boite:hover {  
+        background-color: #dddddd;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .div-mike-titre {
+        margin: auto;
+        padding-right: 30px;
+        padding-bottom: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .responsive {
+      width: 100%;
+      height: auto;
+    }
+
+    @media (min-width: 600px){
+      .position{
+        width: 50%;
+      } 
+    }
+
+    @media (min-width: 900px){
+      .position{
+        width: 25%;
+      } 
+    }
+
+    .flex{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .position:hover{
+       transform: scale(1.1);
+    }
+
+</style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stranger Things</title>
 </head>
-<body>
-  <img src="https://i.imgur.com/rvoU6Oo.png" alt="Dustin">
-  <img src="https://i.imgur.com/5zlzGkw.png" alt="Lucas">
-  <img src="https://i.imgur.com/vIMCZqA.png" alt="Onze">
-  <img src="https://i.imgur.com/3eG4ete.png" alt="Mike">
+<body style="background-color:#000000;">
+<div class="flex">
+  <div class="position"><center> 
+    <div class="image">
+      <div class="degrade image1"></div>
+      <img src="https://i.imgur.com/rvoU6Oo.png" alt="Dustin" class="responsive"></div></center>
+  <div class="div-dustin-boite responsive"><div class="div-dustin-titre">Dustin</div>Dustin est rempli d'énergie et exubérant à souhait. Sa façon de s'exprimer et ses plaisanteries constantes font de lui un personnage digne d'un roman de Stephen King.</div><br><br>
+    </div><div class="position">
+  <center><div class="image">
+    <div class="degrade image2"></div>
+    <img src="https://i.imgur.com/5zlzGkw.png" alt="Lucas" class="responsive"></div></center>
+  <div class="div-lucas-boite responsive"><div class="div-lucas-titre">Lucas</div>Lucas est initialement sceptique quant à l'arrivée d'Onze dans le groupe, mais finit par l'accepter. Geek, comme le reste de ses amis, il manie adroitement une fronde, ce qui se révèle utile contre le Demogorgon.</div><br><br>
+    </div><div class="position">
+  <center><div class="image">
+    <div class="degrade image3"></div>
+    <img src="https://i.imgur.com/vIMCZqA.png" alt="Onze" class="responsive"></div></center>
+  <div class="div-onze-boite responsive"><div class="div-onze-titre">Onze</div>Onze, de son vrai nom: Jane Ives, est la super-héroïne de Stranger Things. Elle est la seule à posséder des super pouvoirs. D'un simple saignement de nez, elle peut réaliser des choses impressionnantes avec son esprit et sauver ses camarades.</div><br><br>
+  </div><div class="position">
+  <center><div class="image">
+    <div class="degrade image4"></div>
+    <img src="https://i.imgur.com/3eG4ete.png" alt="Mike" class="responsive"></div></center>
+  <div class="div-mike-boite responsive"><div class="div-mike-titre">Mike</div>La série est centrée sur Mike et sa famille. Il est celui qui accueil Onze et se soucie le plus d'elle. Bienveillant, il aime Star Wars, Dungeons et Dragons et compagnie.</div><br><br>
+  </div>
+</div>
 </body>
 </html>
