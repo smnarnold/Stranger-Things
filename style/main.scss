@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &-img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+    }
+
+    &-content {
+      background-color: #f5f5dc;
+      border-radius: 8px;
+      width: 300px;
+      padding: 0.2rem 1.2rem 1.2rem 1.2rem;
+      transform: translateY(-2%) skewY(2deg);
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: #dddddd;
+      }
+    }
+
+    .grad-dustin {
+      background-image: linear-gradient(to bottom, #e8f5ff, #45b2ff);
+    }
+    .grad-lucas {
+      background-image: linear-gradient(to bottom, #ffa76a, #ff4431);
+    }
+    .grad-onze {
+      background-image: linear-gradient(to bottom, #9a8478, #1e130c);
+    }
+    .grad-mike {
+      background-image: linear-gradient(to bottom, #072239, #07d173);
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

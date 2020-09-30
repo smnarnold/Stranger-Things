@@ -1,0 +1,50 @@
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  background-color: black;
+}
+
+.card {
+  background-color: #f5f5dc;
+  width: 300px;
+  margin: 20px;
+}
+
+.card-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  vertical-align: middle;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card-content {
+  padding: 0.2rem 1.2rem 1.2rem 1.2rem;
+}
+
+.card .grad-dustin {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e8f5ff), to(#45b2ff));
+  background-image: linear-gradient(to bottom, #e8f5ff, #45b2ff);
+}
+
+.card .grad-lucas {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffa76a), to(#ff4431));
+  background-image: linear-gradient(to bottom, #ffa76a, #ff4431);
+}
+
+.card .grad-onze {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9a8478), to(#1e130c));
+  background-image: linear-gradient(to bottom, #9a8478, #1e130c);
+}
+
+.card .grad-mike {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#072239), to(#07d173));
+  background-image: linear-gradient(to bottom, #072239, #07d173);
+}
+/*# sourceMappingURL=main.css.map */
