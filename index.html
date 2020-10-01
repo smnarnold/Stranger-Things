@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stranger Things</title>
   <style type="text/css">
-  body{ background-color:#000000; }
+  body{ background-color:#000000;}
   
        div.card.dustin{ 
        width:100%;
@@ -13,21 +13,28 @@
        color:#000000;
        font-family:Arial, sans-serif;
        text-align:left;
-       margin-left: auto;
-       margin-right: auto;
+       margin-left:auto;
+       margin-right:auto;
+       }
+
+       div.card:hover{
+        transform:scale(1.05);
+        transition-duration:0.33s;
+       }
+
+       div.texte:hover{
+        background-color:#dddddd;
+        transition-duration:0.33s;
        }
 
        div.card.dustin .img{ 
        background:linear-gradient( #45b2ff, #e8f5ff);
        border-radius:50%;
-       margin-left: auto;
-       margin-right: auto;
+       margin-left:auto;
+       margin-right:auto;
        display:block;
        width:100%;
        }
-
-    
-
 
        div.card.lucas{ 
        width:100%;
@@ -35,34 +42,34 @@
        color:#000000;
        font-family:Arial, sans-serif;
        text-align:left;
-       margin-left: auto;
-       margin-right: auto;
+       margin-left:auto;
+       margin-right:auto;
        }
 
        div.card.lucas .img{ 
        background:linear-gradient( #ff4431,#ffa76a);
        border-radius:50%;
-       margin-left: auto;
-       margin-right: auto;
+       margin-left:auto;
+       margin-right:auto;
        display:block;
        width:100%;
        }
 
-       div.card.onze { 
+       div.card.onze{ 
        width:100%;
        height:auto;
        color:#000000;
        font-family:Arial, sans-serif;
        text-align:left;
-       margin-left: auto;
-       margin-right: auto;
+       margin-left:auto;
+       margin-right:auto;
        }
 
        div.card.onze .img{
        background:linear-gradient(#1e130c,#9a8478);
        border-radius:50%;
-       margin-left: auto;
-       margin-right: auto;
+       margin-left:auto;
+       margin-right:auto;
        display:block;
        width:100%;
        }
@@ -73,15 +80,15 @@
        color:#000000;
        font-family:Arial, sans-serif;
        text-align:left;
-       margin-left: auto;
-       margin-right: auto;
+       margin-left:auto;
+       margin-right:auto;
        }
 
        div.card.mike .img{
        background:linear-gradient( #07d173,#072239);
        border-radius:50%;
-       margin-left: auto;
-       margin-right: auto;
+       margin-left:auto;
+       margin-right:auto;
        display:block;
        width:100%;
        }
@@ -106,7 +113,7 @@
        padding-bottom:20px;
        margin-bottom:40px;
        padding-right:30px;
-       padding-left: 30px;
+       padding-left:30px;
        }
 
        .center{
@@ -128,9 +135,11 @@
 <body>
   <div class="card dustin"> 
     <div class="img">
+      <div class="card":hover></div>
     <img src="https://i.imgur.com/rvoU6Oo.png" alt="Dustin" style="display:block;" class="center" class="responsive" width="100%" height="auto">
     </div>
     <div class= "texte" class="responsive">
+      <div class="texte":hover></div>
     <h1> Dustin </h1>
     <p>Dustin est rempli d'énergie et exubérant à souhait. 
     Sa façon de s'exprimer et ses plaisanteries constantes 
@@ -139,9 +148,11 @@
 
   <div class= "card lucas">
     <div class= "img">
+      <div class="card":hover></div>
     <img src="https://i.imgur.com/5zlzGkw.png" alt="Lucas" style="display:block;" class="center" class="responsive" width="100%" height="auto">
     </div>
     <div class= "texte" class="responsive">
+      <div class="texte":hover></div>
     <h1> Lucas </h1>
     <p>Lucas est initialement sceptique quant à l'arrivée d'Onze dans le groupe,
     mais finit par l'accepter. Geek, comme le reste de ses amis, 
@@ -150,9 +161,11 @@
 
   <div class= "card onze">
     <div class= "img">
+      <div class="card":hover></div>
     <img src="https://i.imgur.com/vIMCZqA.png" alt="Onze" style="display:block;" class="center" class="responsive" width="100%" height="auto">
     </div>
     <div class= "texte" class="responsive">
+      <div class="texte":hover></div>
     <h1>Onze</h1> 
     <p>Onze, de son vrai nom: Jane Ives, 
     est la super-héroïne de Stranger Things.
@@ -164,9 +177,11 @@
 
   <div class= "card mike">
     <div class= "img">
+      <div class="card":hover></div>
     <img src="https://i.imgur.com/3eG4ete.png" alt="Mike" style="display:block;" class="center" class="responsive" width="100%" height="auto">
     </div>
     <div class= "texte" class="responsive">
+      <div class="texte":hover></div>
     <h1>Mike</h1>
     <p>La série est centrée sur Mike
     et sa famille. 
