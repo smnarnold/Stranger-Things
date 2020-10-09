@@ -4,11 +4,186 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stranger Things</title>
+  <style type="text/css" >
+   
+   @media screen and (min-width: 600px){
+      body{
+        justify-content: space-evenly;
+      }
+      .carteDustin{
+        width: 45%;
+      }
+      .carteLucas{
+        width: 45%;
+      }
+      .carteOnze{
+        width: 45%;
+      }
+      .carteMike{
+        width: 45%;
+     }
+
+   }
+
+   @media screen and (min-width: 900px){
+     body{
+       justify-content: space-evenly;
+     }
+     .carteDustin{
+        width: 20%;
+      }
+      .carteLucas{
+        width: 20%;
+      }
+      .carteOnze{
+        width: 20%;
+      }
+      .carteMike{
+        width: 20%;
+     }
+   }
+
+    body {
+      background-color: black;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .carteDustin:hover > .textArea{
+      transition-duration: 0.3s ;  
+      background-color: #dddddd;
+    }
+    .carteLucas:hover > .textArea{
+      transition-duration: 0.3s ;  
+      background-color: #dddddd;
+    }
+    .carteOnze:hover > .textArea{
+      transition-duration: 0.3s ;  
+      background-color: #dddddd;
+    }
+    .carteMike:hover > .textArea{
+      transition-duration: 0.3s ;  
+      background-color: #dddddd;
+    }
+    .carteDustin:hover{
+      transform: scale(1.05);
+      transition-duration: 0.3s ;  
+    }
+    .carteLucas:hover{
+      transform: scale(1.05);
+      transition-duration: 0.3s ;  
+    }
+    .carteOnze:hover{
+      transform: scale(1.05);
+      transition-duration: 0.3s ;  
+    }
+    .carteMike:hover{
+      transform: scale(1.05);
+      transition-duration: 0.3s ;  
+    }
+
+    .carteDustin{
+      margin: 10px;
+    }
+    .carteLucas{
+      margin: 10px;
+    }
+    .carteOnze{
+      margin: 10px;
+    }
+    .carteMike{
+      margin: 10px;
+    }
+
+    .dustin{
+      background-image: linear-gradient(#45b2ff, #e8f5ff);
+      border-radius: 50%;
+    }
+    .lucas{
+      background-image: linear-gradient(#ff4431, #ffa76a);
+      border-radius: 50%;
+    }
+    .onze{
+      background-image: linear-gradient(#1e130c,#9a8478);
+      border-radius: 50%;
+    }
+    .mike{
+      background-image: linear-gradient(#07d173,#072239);
+      border-radius: 50%;
+    }
+    img{
+      margin: auto;
+      display:block;
+      width: 100%;
+      height: auto;
+    }
+    .textArea{
+      padding-top: 20px;
+      background-color: #f5f5dc;
+      font-family: Arial, Helvetica, sans-serif;
+      width: 100%;
+      height: auto;
+      margin: auto;
+      border-radius: 10px;
+      transform: translateY(-10%) skewY(2deg) ;
+    }
+    p{
+      padding: 0px 30px 35px ;
+      font-size: 16px;
+    }
+    h2{
+      padding: 0px 30px 0px ;
+      font-weight: bold;
+      font-size: 24px;
+    }
+    
+      
+    
+
+  </style>
 </head>
 <body>
-  <img src="https://i.imgur.com/rvoU6Oo.png" alt="Dustin">
-  <img src="https://i.imgur.com/5zlzGkw.png" alt="Lucas">
-  <img src="https://i.imgur.com/vIMCZqA.png" alt="Onze">
-  <img src="https://i.imgur.com/3eG4ete.png" alt="Mike">
+
+
+  <div class="carteDustin">
+    <div class="dustin"> 
+      <img src="https://i.imgur.com/rvoU6Oo.png" alt="Dustin">
+    </div>
+    <div class="textArea">
+      <h2>Dustin</h2>
+      <p>Dustin est rempli d'énergie et exubérant à souhait. Sa façon de s'exprimer et ses plaisanteries constantes font de lui un personnage digne d'un roman de Stephen King.</p>
+    </div>
+  </div>
+
+
+  <div class="carteLucas">
+    <div class="lucas"> 
+      <img src="https://i.imgur.com/5zlzGkw.png" alt="Lucas">
+    </div>
+    <div class="textArea">
+      <h2>Lucas</h2>
+      <p background-color: white>Lucas est initialement sceptique quant à l'arrivée d'Onze dans le groupe, mais finit par l'accepter. Geek, comme le reste de ses amis, il manie adroitement une fronde, ce qui se révèle utile contre le Demogorgon.</p>
+   </div>
+  </div>
+
+  <div class="carteOnze">
+    <div class="onze"> 
+      <img src="https://i.imgur.com/vIMCZqA.png" alt="Onze">
+    </div>
+    <div class="textArea">
+     <h2>Onze</h2>
+      <p background-color: white>Onze, de son vrai nom: Jane Ives, est la super-héroïne de Stranger Things. Elle est la seule à posséder des super pouvoirs. D'un simple saignement de nez, elle peut réaliser des choses impressionnantes avec son esprit et sauver ses camarades.</p>
+    </div>
+  </div>
+
+  <div class="carteMike">
+    <div class="mike"> 
+      <img src="https://i.imgur.com/3eG4ete.png" alt="Mike">
+    </div>
+    <div class="textArea">
+      <h2>Mike</h2>
+      <p background-color: white>La série est centrée sur Mike et sa famille. Il est celui qui accueil Onze et se soucie le plus d'elle. Bienveillant, il aime Star Wars, Dungeons et Dragons et compagnie.</p>
+    </div>
+  </div>
 </body>
 </html>
