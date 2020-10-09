@@ -3,12 +3,143 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style> 
+    body {
+        background-color: black
+    }
+    
+    img {
+        display: block;
+        margin: auto;
+        height: auto; 
+        width: 100%;
+    }
+
+    .carte:hover {
+        transform:scale(1.05);
+    }
+
+    .carte {
+        transition-duration:0.333s;
+    }
+
+    .Dustinimg { 
+        background-image: linear-gradient(#45b2ff,#e8f5ff);  
+        border-radius: 50%;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .Lucasimg {
+        background-image: linear-gradient(#ff4431,#ffa76a);
+        border-radius: 50%;
+        width: 100%;
+        display: block;
+        height: auto;
+        margin: auto;
+    }
+
+    .Onzeimg {
+        background-image: linear-gradient(#1e130c,#9a8478);
+        border-radius: 50%;
+        width: 100%;
+        display: block;
+        height: auto;
+        margin: auto;
+    }
+    
+    .Mikeimg {
+        background-image: linear-gradient(#07d173,#072239);
+        border-radius: 50%;
+        width: 100%;
+        display: block;
+        height: auto;
+        margin: auto;
+    }
+
+    .text {
+        background-color: #f5f5dc;
+        margin: 0px 20px 40px 20px; 
+        padding-top: 20px;
+        padding-right: 30px;
+        padding-bottom: 20px; 
+        padding-left: 30px;
+        box-sizing: border-box;
+        border-radius: 6px;
+        transform: translateY(-2%) skewY(2deg);
+    }
+    
+    .text:hover {
+        background-color:#dddd
+    }
+    .text {
+        transition-duration:0.333s;
+    }
+    
+    h2 {
+        font-size: 24px; 
+        font-family: sans-serif; 
+        font-weight: bold; 
+        margin: 0px;
+    }
+
+    p  {
+        font-size: 16px; 
+        font-family: sans-serif; 
+        font-weight: normal;
+    }
+  
+    </style>
+  
   <title>Stranger Things</title>
 </head>
 <body>
-  <img src="https://i.imgur.com/rvoU6Oo.png" alt="Dustin">
-  <img src="https://i.imgur.com/5zlzGkw.png" alt="Lucas">
-  <img src="https://i.imgur.com/vIMCZqA.png" alt="Onze">
-  <img src="https://i.imgur.com/3eG4ete.png" alt="Mike">
+
+<div class="carte">
+<div class="Dustinimg">
+  <img src="https://i.imgur.com/rvoU6Oo.png" alt="Dustin" class="Dustin"> 
+  </div>
+  <div class="text">
+    <h2> Dustin </h2>
+    <p>Dustin est rempli d'énergie et exubérant à souhait. Sa façon de s'exprimer et ses plaisanteries constantes font de lui un personnage digne d'un roman de Stephen King.
+    </p>
+  </div> 
+</div>
+
+<div class="carte">
+<div class="Lucasimg">
+  <img src="https://i.imgur.com/5zlzGkw.png" alt="Lucas" class="Lucas"> 
+  </div>
+  <div class="text"> 
+    <h2> Lucas </h2>
+    <p>Lucas est initialement sceptique quant à l'arrivée d'Onze dans le groupe, mais finit par l'accepter. Geek, comme le reste de ses amis, il manie adroitement une fronde, ce qui se révèle utile contre le Demogorgon.
+    </p>
+    </div>
+</div>
+
+<div class="carte">
+<div class="Onzeimg">
+  <img src="https://i.imgur.com/vIMCZqA.png" alt="Onze" class="Onze"> 
+  </div>
+  <div class="text">
+    <h2>Onze</h2>
+    <p>Onze, de son vrai nom: Jane Ives, est la super-héroïne de Stranger Things. Elle est la seule à posséder des super pouvoirs. D'un simple saignement de nez, elle peut réaliser des choses impressionnantes avec son esprit et sauver ses camarades.
+  </p>
+  </div>
+</div>
+
+<div class="carte">
+<div class="Mikeimg">
+  <img src="https://i.imgur.com/3eG4ete.png" alt="Mike" class="Mike"> 
+  </div>
+  <div class="text">
+  <h2> Mike </h2>
+  <p>
+    La série est centrée sur Mike et sa famille. Il est celui qui accueil Onze et se soucie le plus d'elle. Bienveillant, il aime Star Wars, Dungeons et Dragons et compagnie.
+  </p>
+  </div>
+</div>
+
 </body>
 </html>
