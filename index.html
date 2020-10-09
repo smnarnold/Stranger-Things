@@ -8,6 +8,14 @@
     body{
       background-color: black;
     }
+    .carte:hover > .textArea{
+      transition-duration: 0.3s ;  
+      background-color: #dddddd;
+    }
+    .carte:hover{
+      transform: scale(1.05);
+      transition-duration: 0.3s ;  
+    }
     .dustin{
       background-image: linear-gradient(#45b2ff, #e8f5ff);
       border-radius: 50%;
@@ -44,6 +52,7 @@
   </style>
 </head>
 <body>
+  <div class="carte">
     <div class="dustin"> 
       <img src="https://i.imgur.com/rvoU6Oo.png" alt="Dustin">
     </div>
@@ -51,5 +60,6 @@
       <h2>Dustin</h2>
       <p>Dustin est rempli d'énergie et exubérant à souhait. Sa façon de s'exprimer et ses plaisanteries constantes font de lui un personnage digne d'un roman de Stephen King.</p>
     </div>
+  </div>
 </body>
 </html>
